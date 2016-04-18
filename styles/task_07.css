@@ -1,0 +1,571 @@
+html,body{
+	padding:0;
+	margin:0;
+	list-style: none;
+	min-width: 1366px;
+	font: 15px "Microsoft YaHei";
+}
+nav{
+	width: 100%;
+	height: 4em;
+	top: 0;
+	left:0;
+	position: fixed;
+	list-style: none;
+	overflow: hidden;
+	z-index: 1;
+	background-color: #ffffff;
+}
+nav img{
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin-top: 1em;
+	margin-left: 5em;
+}
+nav ul{
+	display: block;
+	float: right;
+	margin-right: 1em;
+	margin-bottom: 0;
+}
+ul.list li{
+	font-size: 1.2em;
+	display: inline-block;
+	width:5em;
+	text-align: center;
+	margin-left: 1em;
+	padding-bottom: 1em;
+}
+nav span{
+	font-size: 1.6em;
+	font-weight: bold;
+	position: absolute;
+	left:5em;
+	top: 0.8em;
+}
+li.login{
+	background:url(../images/login.png) no-repeat 0 15%;
+}
+ul.list a{
+	display: inline-block;
+	color: #000000;
+	text-decoration: none;
+}
+ul.list a:hover,ul.list a:focus{
+	color: #cc0000;
+}
+ul.list a.login{
+	color: #cc0000;
+}
+ul.list li.item:focus,ul.list li.item:hover,ul.list li.selected{
+	color:#cc0000;
+	border-bottom: 0.2em solid #cc0000;
+}
+div.pic1{
+	margin-top: 4em;
+}
+div.pic1 img{
+	width: 100%;
+}
+div.slogan{
+	position: absolute;
+	left:12em;
+	top: 18em;
+	width: 35em;
+}
+div.slogan h1{
+	font:bold 5em "Times New Roman";
+	color: #ffffff;
+	margin-bottom: 0;
+}
+div.slogan p{
+	font:bold 2em "SimSun";
+	color: #ffffff;
+	word-break: break-all;
+	margin-bottom: 2em;
+}
+div.slogan input{
+	width: 12em;
+	height: 2.5em;
+	background-color: #cc3333;
+	border: 0;
+	cursor: pointer;
+	color: #ffffff;
+	padding:0.5em;
+	font:bold 2em "SimSun";
+}
+div.declaration{
+	position: relative;
+	height:20em; 
+	width: 100%;
+}
+div.intro_one{
+	width: 24.7%;
+	height: 18em;
+	display: inline-block;
+	text-align: center;
+}
+div.intro_one img{
+	margin-top: 4em;
+}
+div.intro_one p{
+	font: bold 1.2em/1.8em "SimSun";
+	color: #666666;
+	opacity: 0.6;
+	border-right: 2px solid #666666;
+}
+div.noborder p{
+	border-right:0 solid #ffffff;
+}
+div.newworld{
+	position: relative;
+	width: 100%;
+	height:30em;
+	text-align: center;
+	background-color: #e8e8e8;
+}
+div.newworld img{
+	margin-top: 6.5em;
+}
+div.newworld h1{
+	font: bold 4em "SimSun";
+	color:#666666;
+	margin:2em;
+}
+div.search_list img{
+	width: 100%;
+}
+div.search_list{
+	position: relative;
+}
+div.coating{
+	position: absolute;
+	width: 100%;
+	height: 359px;
+	opacity: 0.15;
+	background-color: #cc0000;
+}
+div.search_infor{
+	position:absolute;
+	text-align: center;
+	top: 3em;
+	width: 100%;
+	letter-spacing:0.1em;
+	color: #ffffff;	
+	font:bold "SimSun";
+}
+div.line{
+	width: 2.5em;
+	height: 0.2em;
+	background-color: #ffffff;
+	margin:0 auto;
+}
+div.select_list ul{
+	list-style: none;
+	width: 236px;
+	text-align: center;
+	padding-left: 0;
+	margin-top:0.1em;
+	position: absolute;
+	left:-999em;
+	border: 1px solid #cc3333;
+}
+div.select_list ul a{
+	display: block;
+	color: #000000;
+	text-align: left;
+	background-color: #cccccc;
+	border:0;
+	text-decoration:none;
+}
+div.select_list ul a:hover,div.select_list ul a:focus{
+	background-color: #cc3333;
+	color: #ffffff;
+}
+div.select_list li:hover{
+	padding-left:32px;
+	background:url(../images/oklogo.png) no-repeat 0 50%;
+}
+div.select_list:focus ul,div.select_list:hover ul{
+	left:auto;
+}
+div.select_list{	
+	cursor: pointer;
+	margin:1em ;
+	width: 236px;
+	height: 34px;
+	position: relative;
+	float: left;
+	left:10em;
+	border: none;
+	box-shadow: 1px 1px 3px #cc3333;
+	background-image:url(../images/select_list.png);
+}
+div.select_list::before{
+	content: attr(id);
+	color: #aaa;
+	line-height: 32px;
+	margin-right: 12em;
+}
+
+div.search_submit{
+	margin:1em;
+	width: 236px;
+	height: 34px;
+	position: relative;
+	float: left;
+	left:10em;
+}
+div.search_submit input{
+	width: 234px;
+	height: 34px;
+	box-shadow: 1px 1px 2px #330000;
+	background-color: #cc3333;
+	border:0;
+	cursor: pointer;
+	font:bold 1em "SimSun";
+	color: #ffffff;
+	letter-spacing:2em;
+	text-align: center;
+}
+div.activity{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+div.activity h1{
+	font:bold 1.2em "SimSun";
+	color: #333333;
+}
+div.activity h2{
+	letter-spacing: 1.4em;
+}
+div.activity p{
+	margin-top: -1em;
+	color: #999999;
+}
+div.activity>div{
+	float: left;
+	margin:8em 3em 6em 4em;
+}
+div.border{
+	border-top: 1em solid #ffffff;
+	border-bottom:1em solid #ffffff;
+	border-left: 0.6em solid #ffffff;
+	border-right: 0.6em solid #ffffff;
+	box-shadow: 3px 3px 4px #c0c0c0;
+}
+div.time{
+	overflow: hidden;
+	position: relative;
+}
+div.pic2{
+	float: left;
+	position: relative;
+}
+div.pic2 img{
+	width:60.5em;
+}
+div.nw_more{
+	float:left;
+	width: 29em;
+	height: 40em;
+}
+div.nw_infor{
+	position: absolute;
+	top: 8em;
+	padding:4em;	
+}
+div.nw_infor h1{
+	font-size:1.6em;
+	text-align: center;
+}
+div.nw_infor p{
+	font:bold 0.8em/2.8em "SimSun";
+	color: #cccccc;
+}
+div.nw_infor span{
+	color: #cc0000;
+	padding-left: 1.1em;
+	background: url(../images/line.png) no-repeat 0 50%;
+}
+div.nw_infor button{
+	margin:3em 8em 2em;
+	background-color: #ffffff;
+	width: 8.2em;
+	height: 2.8em;
+	color: #cc0000;
+	border:0.1em solid #cc0000;
+	cursor: pointer;
+}
+div.circle{
+	text-align: center;
+}
+div.first_circle{
+	background-color: #999999;
+}
+div.circle div{
+	margin:0.3em;
+	display: inline-block;
+	width: 0.7em;
+	height: 0.7em;
+	border:1px solid #999999;
+	border-radius: 0.7em;
+}
+div.block_time{
+	position: absolute;
+	top: 8em;
+	left:10em;
+	text-align: center;
+}
+div.block_time h1{
+	font: bold 4em "SimSun";
+	color: #ffffff;
+	margin:0;
+}
+div.block_time h2{
+	font: bold 13em "Times New Roman";
+	text-transform: uppercase;
+	color: #ffffff;
+	margin:-0.2em auto 0;
+}
+div.block_time h3{
+	font:bold 2em "SimSun";
+	color: #ffffff;
+	margin: 0;
+}
+div.block_time h4{
+	font:bold 2em "SimSun";
+	color: #ffffff;
+	margin-top: 0.4em;
+}
+div.pic2::after{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 0;
+	width: 0;
+	content: '';
+	border: 2em solid #e5c3b2;
+	border-color:  transparent #ffffff transparent transparent;
+}
+div.life{
+	position: relative;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+div.life>div{
+	display: inline-block;
+	height: 40em;
+	float: left;
+	text-align: center;
+}
+div.div1{
+	background-color: #ff3333;
+	width: 33.3%;
+}
+div.div1>div,div.div2>div{
+	position: relative;
+	top:40%;
+}
+div.div1 p{
+	font:bold 1.7em "SimSun";
+	color: #ffffff;
+	margin-bottom: 1.5em;
+}
+div.div1 button{
+	width: 10em;
+	height: 2em;
+	color: #ffffff;
+	background-color: #ff3333;
+	margin-top: 1.5em;
+	font:bold 1.5em "SimSun";
+	border:0.08em solid #ffffff;
+	cursor: pointer;
+}
+div.div2{
+	background-color: #ffffff;
+	width: 33.3%;
+}
+div.div2 p{
+	font:bold 1.7em "SimSun";
+	margin-bottom: 1.5em;
+}
+.div2 div.line{
+	width: 2.5em;
+	height: 0.2em;
+	background-color: #999999;
+	margin:0 auto;
+}
+div.div2 button{
+	width: 10em;
+	height: 2em;
+	color: #ff3333;
+	background-color: #ffffff;
+	margin-top: 1.5em;
+	font:bold 1.5em "SimSun";
+	border:0.08em solid #ff3333;
+	cursor: pointer;
+}
+div.div3{
+	background:url(../images/pic3.png) no-repeat ;
+	background-size: cover;
+	width: 33.4%;
+}
+div.div3 div{
+	position: absolute;
+	background-color: #000000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+}
+div.div3 div::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2em solid #ffffff;
+	border-color: transparent transparent transparent #ffffff;
+}
+div.joinus{
+	text-align: center;
+}
+div.protocol{
+	position: relative;
+	margin:4em 6em;
+	overflow: hidden;
+}
+div.joinus h1{
+	font: bold 1.5em "SimSun";
+	margin:6em auto 0.5em;
+}
+.joinus div.line{
+	width: 2.5em;
+	height: 0.2em;
+	background-color: #cc3333;	
+}
+div.joinus p{
+	font: bold 1em "SimSun";
+	color: #999999;
+	margin-bottom: 5em;
+}
+div.left{
+	position: relative;
+	width: 23em;
+	float: left;
+	margin-right: 2em;
+}
+div.left>div{
+	margin:0 0 7em 0;
+}
+div.left h1{
+	font: bold 1.1em "SimSun";
+	opacity: 0.75;
+}
+div.left>div::after{
+	position: absolute;
+	right: 0;
+	display:block;
+	content: 'more';
+	font-size: 0.8em;
+	padding-left: 0.8em;
+	color: #999999;
+	background:url(../images/more.png) no-repeat 0 50%;
+}
+div.left p{
+	font: bold 0.8em "SimSun";
+	color: #999999;
+	letter-spacing: 0.15em;
+	margin-bottom: 2em;
+}
+form{
+	width: 50em;
+	display: inline-block;
+}
+fieldset{
+	width: 26em;
+	height: 2.5em;
+	border:none;
+	font-size: 0.8em;
+	margin:1em;
+	display: inline-block;
+	background-color: #dcdcdc;
+}
+fieldset input{
+	display: inline-block;
+	margin-top: 0.5em;
+	border:none;
+	background-color: #dcdcdc;
+}
+textarea{
+	margin:1em;
+	border:none;
+	background-color: #dcdcdc;
+}
+form button{
+	margin: 0.8em 0.8em 8em;
+	width: 38em;
+	height: 3em;
+	font:bold 1.2em "SimSun";
+	border:none;
+	cursor: pointer;
+	background-color: #dcdcdc;
+}
+div.contact{
+	text-align: center;
+	position: relative;
+	color: #ffffff;
+	letter-spacing: 0.2em;
+	background-color: #22221E;
+}
+div.contact h1{
+	padding-top: 4em;
+	font-size: 1.6em;
+}
+div.contact p{
+	margin-bottom: 2em;
+}
+div.contact input{
+	width: 35em;
+	height: 2em;
+	font-size: 1.2em;
+}
+div.contact button{
+	border:0;
+	width: 6em;
+	height: 2.4em;
+	margin-left:-0.4em;
+	color: #ffffff;
+	letter-spacing: 0.5em;
+	font-size:1.2em;
+	cursor: pointer;
+	background-color: #696969;
+}
+div.contact img{
+	display: inline-block;
+	margin:3em 2em 4em auto;
+}
+footer{
+	width: 100%;
+	color: #ffffff;
+	height: 5em;
+	background-color: #000000;
+}
+footer span.span1{
+	display: inline-block;
+	float: left;
+	margin:2em;
+}
+footer a{
+	display:inline-block;
+	float: right;
+	margin:2em;
+	color: #ffffff;
+	text-decoration: none;
+}
+
